@@ -20,7 +20,6 @@ body {
   align-items: center;
   margin: 92px 28px;
   padding: 0 20px 0 22px;
-  /* background-color: beige; */
 }
 
 /* Меню */
@@ -194,15 +193,19 @@ body {
   font-weight: 700;
   line-height: 46.96px;
   text-transform: uppercase;
+  margin: 180px 0 3px 64px;
 }
 
 .lots__card-list {
   list-style: none;
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  margin: 24px;
+  color: #fff;
 }
 
 .lots__card-list-item {
-  
+
 }
 
 .card-link {
@@ -210,31 +213,68 @@ body {
 }
 
 .card {
-  
+  width: 334px;
+  height: 563px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.card .overlay {
+  grid-column: 1;
+  grid-row: 1 / span 2;
 }
 
 .card_type_film {
-  
+  background-image: url(../images/card-lot-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card_type_book {
-  
+  background-image: url(../images/card-lot-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card_type_picture {
-  
+  background-image: url(../images/card-lot-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card__title {
-  
+  grid-column: 1;
+  grid-row: 1 / span 1;
+  align-self: start;
+  z-index: 1;
+  font-size: 22px;
+  line-height: 26.4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 15%;
+  margin: 50px 40px 0 40px;
 }
 
 .card__text {
-  
+  grid-column: 1;
+  grid-row: 2 / span 1;
+  font-size: 20px;
+  line-height: 24px;
+  align-self: end;
+  z-index: 1;
+  margin: 0 40px 48px 40px;
 }
 
 .lots__look-more-link {
-  
+  font-size: 20px;
+  line-height: 23.48px;
+  margin: 6px 0 0 64px;
 }
 
 /* Блок ОБ АУКЦИОНЕ */
