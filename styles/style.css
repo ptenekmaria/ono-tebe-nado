@@ -50,7 +50,7 @@ body {
 .lots__look-more-link,
 .footer__menu-link {
   text-decoration-line: underline;
-  text-underline-offset: 15%;
+  text-underline-offset: 16%;
 }
 
 .header__link_active,
@@ -66,19 +66,20 @@ body {
 }
 
 .header__logo-image {
- margin: auto;
+ margin: 0;
 }
 
 /* Контакты */
 .address {
   width: 240.52px;
   font-style: normal;
-  justify-self: end;
   line-height: 24.3px;
+  margin: 0 0 0 50px;
 }
 
 .header__address {
-  
+  justify-self: end; 
+  margin: 0;
 }
 
 /* Блок ОБЛОЖКА */
@@ -205,14 +206,6 @@ body {
   color: #fff;
 }
 
-.lots__card-list-item {
-
-}
-
-.card-link {
-  
-}
-
 .card {
   width: 334px;
   height: 563px;
@@ -281,7 +274,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
-  margin: 181px 30px 0 14px;
+  margin: 181px 29px 0 16px;
   font-size: 20px;
 }
 
@@ -319,37 +312,40 @@ body {
 
 /* Блок ФУТЕР */
 .footer {
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: start;
+  align-items: start;
+  margin: 166px 0 88px 0;
+  background-color: #ca9bc5;
 }
 
 .footer__menu {
-  
+  justify-self: center;
 }
 
+.footer__menu-list,
+.footer__social-list {
+  list-style: none;
+  
+}
 .footer__menu-list {
-  
-}
-
-.footer__menu-list-item {
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer__social-list {
-  
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  justify-self: end;
+  margin: 0 26px;
 }
 
 .footer__social-list-item {
-  
-}
-
-.footer__social-link_pn {
-  
-}
-
-.footer__social-link_vk {
-  
-}
-
-.footer__social-link_yt {
-  
+  width: 48px;
+  height: 48px;
+  margin: 0 24px;
 }
