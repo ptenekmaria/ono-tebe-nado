@@ -1,17 +1,19 @@
 body {
   scroll-behavior: smooth;
-  /* background-color: bisque; */
+  min-height: 100vh;
   font-size: 18px;
   display: flex;
   flex-flow: column nowrap;
-  min-height: 100vh;
-  }
+}
+
 .main {
   flex: 1;
   display: flex;
   flex-flow: column nowrap;
 }
+
 /* Блок ХЕДЕР */
+
 .header {
   display: grid;
   grid-template-columns: 3fr 1fr 3fr;
@@ -23,11 +25,13 @@ body {
 }
 
 /* Меню */
+
 .header-menu {
   line-height: 21.13px;
 }
 
 /* Список для меню */
+
 .header__links-list {
   list-style-type: circle;
   display: flex;
@@ -43,7 +47,7 @@ body {
 }
 
 .header__links-list-item_no-bullit::marker {
-  content: '';
+  content: "";
 }
 
 .header__link,
@@ -59,6 +63,7 @@ body {
 }
 
 /* Логотип */
+
 .header-logo {
   width: 148px;
   height: 105px;
@@ -66,10 +71,11 @@ body {
 }
 
 .header__logo-image {
- margin: 0;
+  margin: 0;
 }
 
 /* Контакты */
+
 .address {
   width: 240.52px;
   font-style: normal;
@@ -78,11 +84,12 @@ body {
 }
 
 .header__address {
-  justify-self: end; 
+  justify-self: end;
   margin: 0;
 }
 
 /* Блок ОБЛОЖКА */
+
 .cover {
   background-image: url(../images/cover.jpg);
   background-color: #ca9bc5;
@@ -105,6 +112,7 @@ body {
 }
 
 /* Заголовок */
+
 .cover__title {
   font-size: 100px;
   font-weight: 700;
@@ -146,6 +154,7 @@ body {
 }
 
 /* Подзаголовок с кнопкой ставки */
+
 .cover__description {
   display: flex;
   justify-content: space-between;
@@ -183,6 +192,7 @@ body {
 }
 
 /* Блок ЛОТЫ */
+
 .lots {
   display: flex;
   flex-direction: column;
@@ -270,6 +280,7 @@ body {
 }
 
 /* Блок ОБ АУКЦИОНЕ */
+
 .about {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -311,6 +322,7 @@ body {
 }
 
 /* Блок ФУТЕР */
+
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -318,7 +330,6 @@ body {
   justify-items: start;
   align-items: start;
   margin: 166px 0 88px 0;
-  background-color: #ca9bc5;
 }
 
 .footer__menu {
@@ -328,7 +339,6 @@ body {
 .footer__menu-list,
 .footer__social-list {
   list-style: none;
-  
 }
 .footer__menu-list {
   display: flex;
