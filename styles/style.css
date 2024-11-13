@@ -6,12 +6,6 @@ body {
   flex-flow: column nowrap;
 }
 
-.main {
-  flex: 1;
-  display: flex;
-  flex-flow: column nowrap;
-}
-
 /* Блок ХЕДЕР */
 
 .header {
@@ -29,8 +23,6 @@ body {
 .header-menu {
   line-height: 21.13px;
 }
-
-/* Список для меню */
 
 .header__links-list {
   list-style-type: circle;
@@ -50,16 +42,12 @@ body {
   content: "";
 }
 
-.header__link,
-.lots__look-more-link,
-.footer__link,
-.footer__menu-link {
+.header__link {
   text-decoration-line: underline;
   text-underline-offset: 16%;
 }
 
-.header__link_active,
-.footer__menu-link_active {
+.header__link_active {
   text-decoration-line: none;
 }
 
@@ -87,6 +75,14 @@ body {
 .header__address {
   justify-self: end;
   margin: 0;
+}
+
+/* Основная часть страницы */
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 /* Блок ОБЛОЖКА */
@@ -128,34 +124,38 @@ body {
   position: relative;
   inset: -100% 0 0 0;
   text-transform: uppercase;
+  margin-top: 160px;
+  line-height: 115px;
 }
 
 .aligned-text {
   order: 0;
-  margin-top: 166px;
   margin-left: 50px;
-  line-height: 115px;
+  line-height: 126px;
 }
 
 .aligned-text_center {
   align-self: center;
   order: 1;
-  line-height: 115px;
-  margin-top: 6px;
   margin-left: 0;
   margin-right: 28px;
+  line-height: 115px;
 }
 
 .aligned-text_right {
   align-self: flex-end;
   order: 2;
+  margin-left: 0;
+  margin-right: 50px;
   line-height: 115px;
-  margin-right: 20px;
-  margin-top: 0;
 }
 
 .letter-spacing-extended {
   letter-spacing: 0.6em;
+}
+
+.letter-spacing-shrink {
+  letter-spacing: 0;
 }
 
 /* Подзаголовок с кнопкой ставки */
@@ -167,7 +167,7 @@ body {
   z-index: 1;
   position: relative;
   inset: -100% 0 0 0;
-  margin: 126px 50px 0 78px;
+  margin: 128px 50px 0 78px;
 }
 
 .cover__description-text,
@@ -187,7 +187,7 @@ body {
 }
 
 .bet-button {
-  background-color: rgb(255 255 255/0);
+  background-color: transparent;
   color: #fff;
   border-style: solid;
   border-color: #fff;
@@ -224,13 +224,21 @@ body {
   color: #fff;
 }
 
+.lots__card-list-item {
+  width: 334px;
+  min-height: 563px;
+  flex-grow: 1;
+}
+
 .card-link {
   text-decoration: none;
+  width: 100%;
+  height: 100%;
 }
 
 .card {
-  width: 334px;
-  min-height: 563px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -255,7 +263,7 @@ body {
 .card__title {
   z-index: 1;
   font-size: 22px;
-  line-height: 26.4px;
+  line-height: 26px;
   text-transform: uppercase;
   font-weight: 700;
   text-decoration-line: underline;
@@ -274,6 +282,9 @@ body {
 .lots__look-more-link {
   line-height: 23.48px;
   margin: 6px 0 0 64px;
+  max-width: fit-content;
+  text-decoration-line: underline;
+  text-underline-offset: 16%;
 }
 
 /* Блок ОБ АУКЦИОНЕ */
@@ -298,7 +309,7 @@ body {
   background-color: #000;
   height: 240px;
   width: 240px;
-  border-radius: 9999px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -333,18 +344,29 @@ body {
   margin: 21px 0 88px 0;
 }
 
+.footer__link {
+  text-decoration-line: underline;
+  text-underline-offset: 16%;
+}
+
 .footer__menu {
   justify-self: center;
 }
 
-.footer__menu-list,
-.footer__social-list {
-  list-style: none;
-}
 .footer__menu-list {
   display: flex;
   flex-direction: column;
   align-items: center;
+  list-style: none;
+}
+
+.footer__menu-link {
+  text-decoration-line: underline;
+  text-underline-offset: 16%;
+}
+
+.footer__menu-link_active {
+  text-decoration-line: none;
 }
 
 .footer__social {
@@ -362,4 +384,8 @@ body {
   width: 48px;
   height: 48px;
   margin: 0 24px;
+}
+
+.footer__social-list {
+  list-style: none;
 }
