@@ -378,14 +378,11 @@ body {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
+  list-style: none;
 }
 
 .footer__social-list-item {
   width: 48px;
   height: 48px;
   margin: 0 24px;
-}
-
-.footer__social-list {
-  list-style: none;
 }
